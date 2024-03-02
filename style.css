@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Adamina", serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: #D9D9D9;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 1000px;
+    text-align: center;
+}
+
+form{
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+tr{
+    display: flex;
+    
+}
+
+tr th, td{
+    background-color: #D9D9D9;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+td{
+    border-bottom: 1px  dotted black;
+}
+
+button{
+    padding: 2px;
+    background-color: yellow;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+}
