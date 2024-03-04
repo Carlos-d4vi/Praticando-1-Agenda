@@ -13,9 +13,19 @@ form.addEventListener('submit', (e) => {
     const tr = document.createElement('tr')
     
 
-    nomeTd.textContent = nomeInput.value
-    telefoneTd.textContent = telefoneInput.value
+    if(nomeInput.value && telefoneInput.value != ''){
+        nomeTd.textContent = nomeInput.value
+        telefoneTd.textContent = telefoneInput.value
+    
+        nomeInput.value = ''
+        telefoneInput.value = ''
+        
+        tbody.append(tr)
+        tr.append(nomeTd, telefoneTd)
+    
+    }else{
+        alert('Preencha os campos')
+    }
 
-    tbody.append(tr)
-    tr.append(nomeTd, telefoneTd)
+
 })
