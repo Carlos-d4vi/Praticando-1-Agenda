@@ -1,5 +1,11 @@
 const form = document.querySelector('form')
 
+function capitalize(string){
+    return string.charAt(0).toUpperCase() + string.slice(1)
+    
+}
+
+
 form.addEventListener('submit', (e) => {
 
     e.preventDefault()
@@ -11,10 +17,12 @@ form.addEventListener('submit', (e) => {
 
     const tbody = document.querySelector('tbody')
     const tr = document.createElement('tr')
-    
 
     if(nomeInput.value && telefoneInput.value != ''){
-        nomeTd.textContent = nomeInput.value
+
+        const nomeFormatado = capitalize(nomeInput.value)
+
+        nomeTd.textContent = nomeFormatado
         telefoneTd.textContent = telefoneInput.value
     
         nomeInput.value = ''
